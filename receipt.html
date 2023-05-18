@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Template</title>
+    <style type="text/css">
+    body {
+		margin: 0;
+		background-color: #cccccc;
+	}
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+	.wrapper {
+		width: 100%;
+		table-layout: fixed;
+		background-color: #ffff;
+		padding-bottom: 60px;
+	}
+    .one-column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .customerMessage h1,
+    .messageRow p{
+        text-align: center;
+        
+    }
+    .orderDetails {
+        font-weight: bold;
+    }
+    .downloadImg{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .receiptDetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .orderFAQ button {
+        margin: 5px;
+        height: 40px;
+        width: 343px;
+    }
+    </style>
+</head>
+<body>
+    <center class="wrapper">
+        <div class="main" style="width: 100%;">
+            <div style="height: 8px; background-color: #171a1b;"></div>
+            <!-- LOGO SECTION -->
+            <div style="padding: 14px 0 4px;">
+                <div style="width: 100%;">
+                    <div class="one-column">
+                        <div class="column" style="padding: 0 62px 10px; margin: 15px;">
+                            <a href="#"><img src="img/receipt/logo.png" width="300"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- CUSTOMER MESSAGE SECTION -->
+            <div style="border-top: 1px solid #171a1b;  margin: 20px; height: 50%;" >
+                <div class="customerMessage">
+                    <h1>Thank you for your order</h1>
+                    <h1>Customer</h1>
+                </div>
+                <div class="messageRow">
+                    <div>
+                        <p>Order Number: <span class="orderDetails">12345678910111213</span></p>
+                    </div>
+                </div>
+            <div class="messageRow">
+                <div>
+                    <p>Order Date: <span class="orderDetails">01/01/24</span></p>
+                </div>
+            </div>
+            <div class="messageRow">
+                <div>
+                    <p>Order Total: <span class="orderDetails">$50.00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+            <!-- DOWNLOAD SECTION -->
+            <div style="border-top: 1px solid #171a1b; border-bottom: 1px solid #171a1b; margin: 20px;">
+                <div class="downloadImg" style="margin: 25px;">
+                    <a href="#" style="text-align: center;">
+                        <img src="img/receipt/download.png" alt="" style="width: 50%;">
+                    </a>
+                    <a href="#" style="text-decoration: none; color: #171a1b; font-weight: bold; font-size: 25px;">Download</a>
+                </div>
+                <div style="display: flex; justify-content: space-around;">
+                    
+                    <div>
+                        <a href="#"><img src="https://picsum.photos/200" alt="" style="margin: 20px;"></a>
+                    </div>
+                    <div style="width: 50%; display: flex; flex-direction: column; justify-content: space-evenly;">
+                        <div style="display: flex; justify-content: space-between;">
+                        <p>Gift Card</p> 
+                        <p style="font-weight: bold;"">$50</p>
+                    </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p>QTY:1 </p>
+                            
+                            
+                                <p style="font-weight: bold;"> $50</p>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- ALERT SECTION -->
+                
+                <div style="background-color: #edeaea; width: 343px; display: flex; margin-top: 20px; align-items: center;">
+                    <div style="width: 10%;">
+                        <img src="img/receipt/alert.png" alt="" style="width: 100%;">
+                    </div>
+                    <div style="width: 85%;">
+                        <p>You will receive an email when your Digital Download is ready. You can also access your download code by going to Your Account > Order History</p>
+                    </div>
+                </div>
+                
+                <!-- ORDER SUMMARY -->
+                
+                <div class="orderDiv">
+                    <h1>Order Summary</h1>
+                    <p style="font-weight: bold;">Subtotal <span style="font-weight: bold;">$50.00</span></p>
+                    <p>Shipping & Handling <span>FREE</span></p>
+                    <p>Estimated Tax <span>$0.00</span></p>
+                    <p style="font-weight: bold; border-top: 1px solid #171a1b; border-bottom: 1px solid #171a1b; width: 50%; padding: 5px;" >Estimated Total <span style="font-weight: bold;">$50.00</span></p>
+                </div>
+            </div>
+                
+            <!-- PAYMENT METHOD -->
+            <div>
+                <h1>Payment Method</h1>
+                <p style="font-weight: bold;">Gift Card</p>
+                <p>Amount: $50.00</p>
+            </div>
+
+            <!-- ORDER FAQ -->
+            <div style="display: flex; flex-direction: column; background-color: #edeaea; align-items: center; padding: 20px;" class="orderFAQ">
+                <h1>Need help with your order?</h1>
+                <button style="border-radius: 5px;"><a href="#"></a>SHIPPING FAQS</button>
+                <button style="border-radius: 5px;"><a href="#"></a>RETURNS FAQS</button>
+                <button style="border-radius: 5px;"><a href="#"></a>ORDER TRACKING</button>
+            </div>
+
+            <!-- CONTACT SECTION -->
+
+            <div style="background-color: rgb(255, 47, 47); padding: 30px;">
+                <img src="img/receipt/question.png" alt="question" style="height: 50px; margin: 25px;">
+                <p style="color: #edeaea; font-size: 32px; font-weight: bold;">STILL HAVE QUESTIONS?</p>
+                <button style="background-color: #171a1b; width: 200px; height: 30px; border-radius: 5px;"><a href="#" style="color: #edeaea; text-decoration: none; ">CONTACT US</a></button>
+            </div>
+
+
+            <!-- APP SECTION -->
+            <h3>Get our app</h3>
+            <div style="display: flex;">
+                <a href="#"><img src="img/receipt/appStore.png" alt="app" width="60%"></a>
+                <a href="#"><img src="img/receipt/googlePlay.png" alt="app" width="60%"></a>
+                
+            </div>
+
+            <!-- FOOTER SECTION -->
+            <div style="margin: 10px;"> 
+            <div>
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">My Account</a>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <p>Company, Inc. 2023 |</p> 
+                <p>123 Address Parkway |</p> 
+                <p> City, TX 76011</p>
+            </div>
+            <div style="margin: 5px;">
+                <img src="img/receipt/logo.png" alt="" width="30%">
+            </div>
+        </div>
+
+
+    </center>
+</body>
+</html>
