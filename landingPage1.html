@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: #cccccc;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .wrapper {
+                width: 100%;
+                table-layout: fixed;
+                background-color: #ffff;
+                
+            }
+        .topDiv {
+            display: flex;
+            background-color: #FEF9F1;
+            height: 100vh;
+        }
+        @media only screen and (max-width: 844px)  {
+            .topDiv {
+                flex-direction: column;
+            }
+        }
+        .bottomDiv {
+            background-image: linear-gradient(rgba(34, 44, 28, 0.6), rgba(34, 44, 28, 0.6)),
+            url(../img/landingPages/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            padding-bottom: 30px;
+        }
+        .threeDivs{
+            background-color: #FFFFFF;
+            width: 90%;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topDiv">
+            <div style="text-align: center;">
+                <img src="../img/landingPages/landinglogo1.png" alt="" style="width: 90%; padding: 30px 0 30px;">
+                <h1>YOU <span style="color: #555D52;">CAN</span> BALANCE FAMILY AND FITNESS</h1>
+                <p>This weekly workout planner is the best starting point for busy parents</p>
+                <button style="background-color: #4A5D52;width: 70%; height: 60px;"><a href="#" style="text-decoration: none; font-size: 20px; color: #F9FFFF;">GET MY FREE PLANNER</a></button>
+            </div>
+            <div style="display: flex; align-items: center; margin: 10px; padding: 20px; justify-content: center;">
+                <img src="../img/landingPages/book.png" alt="">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;align-items: center;" class="bottomDiv">
+            <h1 style="text-align: center; color: #FFFFFF; font-size: 40px;">USE YOUR WORKOUT PLANNER TO:</h1>
+            <div class="threeDivs">
+                <h2>SET YOUR INTENTIONS</h2>
+                <p>From setting goals to time-blocking, this planner will help you be more intentional with your workouts. You’ll feel confident, committed—and stronger.</p>
+            </div>
+            <div class="threeDivs">
+                <h2>TRACK YOUR PROGRESS.</h2>
+                <p>Keeping a record of each workout and your accomplishments is the easiest way to motivate yourself. Knowing how far you’ve come will only push you further! </p>
+            </div>
+            <div class="threeDivs">
+                <h2>STAY ACCOUNTABLE.</h2>
+                <p>It’s hard to find time for fitness between work and kids, but creating a routine will keep you on track, and you’ll see real results when you become consistent.</p>
+            </div>
+            <button style="background-color: #F9FFFF; width: 70%; height: 60px;"><a href="#" style="text-decoration: none; color: black; font-size: 15px;">GET MY FREE PLANNER</a></button>
+        </div>
+        <div style="background-color: #4A5D52; width: 100%; ">
+            
+        </div>
+
+    </div>
+</body>
+</html>
