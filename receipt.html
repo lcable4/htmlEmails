@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receipt Template</title>
     <style type="text/css">
-    body {
-		margin: 0;
-		background-color: #cccccc;
-	}
-	table {
-		border-spacing: 0;
+    html{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+            border-spacing: 0;
 	}
 	td {
 		padding: 0;
@@ -20,11 +22,17 @@
 		border: 0;
 	}
 	.wrapper {
-		width: 100%;
+        width: 100%;
 		table-layout: fixed;
 		background-color: #ffff;
 		padding-bottom: 60px;
+        
 	}
+    body {
+        margin: 0;
+        background-color: #cccccc;
+        max-width: 600px;
+    }
     .one-column{
         display: flex;
         justify-content: center;
